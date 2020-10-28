@@ -1,0 +1,133 @@
+:root{
+  --shadow:  rgba(0, 0, 0, 0.3);
+  --corners: 5px;
+  --light: rgb(249 248 248);
+  --primary-dark: rgb(24, 20, 20);
+}
+body{
+  background-color: #cfc8bd;
+  
+  font-size: 14pt;
+  color: #161010
+}
+.card{
+  background-color: var(--light);
+  padding: 0.5em;
+  box-shadow: 2px 0 8px var(--shadow) ;
+  border-radius: var(--corners);
+  font: icon;
+}
+.container{
+  width: 98%;
+  margin: auto;
+}
+
+.fab{
+   background-color:blue;
+   color: var(--light);
+  
+  border-radius: 20px;
+  text-transform: uppercase;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--primary-dark);
+  transition: all .2s ease;
+  cursor: pointer;
+  padding: 0.5em;
+  float: right;
+}
+
+.submitButton{
+  background-color: #09099b;
+  color: var(--light);
+  border-radius: var(--corners);
+  text-transform: uppercase;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--primary-dark);
+  transition: all .2s ease;
+  cursor: pointer;
+  padding: 0.5em;
+}
+.submitButton:hover{
+background-color: #0000ff
+;
+}
+
+.cancelButton{
+  background-color: rgb(236, 28, 28);
+  color: var(--light);
+  border-radius: var(--corners);
+  text-transform: uppercase;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--primary-dark);
+  transition: all .2s ease;
+  cursor: pointer;
+  padding: 0.5em;
+}
+.cancelButton:hover{
+  background-color: rgb(255, 7, 7);
+}
+form{
+  margin: 0;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 8px 8px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.emergency-contact{
+  background-color: rgb(32, 24, 24);
+  color: honeydew;
+  font: icon;
+
+}
+.emergency-contact::before{
+  font-family: "FontAwesome";
+  padding: 10px;
+  content: " \f0f9  Emergency Contact";
+  position: absolute;
+  right: 30px;
+}
+.delete{
+  color: red;
+}
+.d-flex{
+  display: flex;
+  align-items: center;
+}
+.d-flex.space-between{
+  justify-content: space-between;
+}
+.d-flex.space-around{
+  justify-content: space-around;
+}
+.mt-1{
+  margin-top: .5em;
+}
+.mt-2{
+  margin-top: 0.5em;
+}
+.mt-3{
+  margin-top: 1.5em;
+}
+
+.mb-1{
+  margin-bottom: .5em;
+}
+.mb-2{
+  margin-bottom: 1em;
+}
+.mb-3{
+  margin-bottom: 1.5em;
+}
+
+.text-center{
+  text-align: center;
+}
+.hidden{
+  display: none !important;
+}
